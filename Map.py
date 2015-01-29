@@ -15,4 +15,5 @@ class Map(object):
     def NVPs(self):
         for item in self.parsed_file:
             self.NVPList.append(NVP(item[3], item[4], item[1], item[5:]))
+            print len(item)
         print self.NVPList
